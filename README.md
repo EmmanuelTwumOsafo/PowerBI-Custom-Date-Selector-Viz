@@ -2,6 +2,7 @@
 
 [![Power BI](https://img.shields.io/badge/Power%20BI-Custom%20Visual-F2C811?logo=powerbi)](https://powerbi.microsoft.com/)
 [![Version](https://img.shields.io/badge/Version-1.0.0-green.svg)](https://github.com/EmmanuelTwumOsafo/PowerBI-Custom-Date-Selector-Viz)
+[![Release](https://img.shields.io/github/v/release/EmmanuelTwumOsafo/PowerBI-Custom-Date-Selector-Viz)](https://github.com/EmmanuelTwumOsafo/PowerBI-Custom-Date-Selector-Viz/releases)
 [![Downloads](https://img.shields.io/github/downloads/EmmanuelTwumOsafo/PowerBI-Custom-Date-Selector-Viz/total)](https://github.com/EmmanuelTwumOsafo/PowerBI-Custom-Date-Selector-Viz/releases)
 
 A professional date range slicer for Power BI with an intuitive interface, preset date ranges, and customizable styling.
