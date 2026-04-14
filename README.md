@@ -1,7 +1,7 @@
 # Power BI Date Range Slicer
 
 [![Power BI](https://img.shields.io/badge/Power%20BI-Custom%20Visual-F2C811?logo=powerbi)](https://powerbi.microsoft.com/)
-[![Version](https://img.shields.io/badge/Version-1.0.0-green.svg)](https://github.com/EmmanuelTwumOsafo/PowerBI-Custom-Date-Selector-Viz)
+[![Version](https://img.shields.io/badge/Version-1.1.0-green.svg)](https://github.com/EmmanuelTwumOsafo/PowerBI-Custom-Date-Selector-Viz)
 [![Release](https://img.shields.io/github/v/release/EmmanuelTwumOsafo/PowerBI-Custom-Date-Selector-Viz)](https://github.com/EmmanuelTwumOsafo/PowerBI-Custom-Date-Selector-Viz/releases)
 [![Downloads](https://img.shields.io/github/downloads/EmmanuelTwumOsafo/PowerBI-Custom-Date-Selector-Viz/total)](https://github.com/EmmanuelTwumOsafo/PowerBI-Custom-Date-Selector-Viz/releases)
 
@@ -11,6 +11,9 @@ A professional date range slicer for Power BI with an intuitive interface, prese
 
 ## ✨ Features
 
+- **Focus Mode Onboarding** - Professional first-time setup experience
+- **Date Range Validation** - Prevents invalid date selections
+- **Themed Dialog Buttons** - OK/Cancel buttons match your theme color
 - **Compact Design** - Matches Power BI's native styling
 - **Quick Date Selection** - Click date fields for instant picking
 - **Advanced Range Selection** - Dual calendar view with presets
@@ -19,11 +22,29 @@ A professional date range slicer for Power BI with an intuitive interface, prese
 - **Customizable Colors** - Match your report theme
 - **Professional UI** - Clean interface with month/year dropdowns
 
+## 🆕 What's New in v1.1.0
+
+### Major Enhancements
+- **Focus Mode Integration**: Automatically enters focus mode for first-time setup, exits smoothly after completion
+- **Date Validation**: Start date cannot be after end date (and vice versa) with visual feedback
+- **Custom Themed Buttons**: Dialog buttons now use your selected theme color
+- **Improved Layout**: Redesigned date picker footer (Today | Cancel OK)
+
+### Bug Fixes
+- Fixed focus mode re-entry loop
+- Fixed invalid date range selections
+- Removed scrollbars from dialogs
+- Theme colors now apply to all dialog buttons
+
+[View Full Changelog](#changelog)
+
 ## 📥 Download
 
-**[Download DateRangeSlicer.1.0.0.pbiviz](DateRangeSlicer.1.0.0.pbiviz)**
+**Latest Version: 1.1.0**
 
-Or get it from the [Releases](https://github.com/EmmanuelTwumOsafo/PowerBI-Custom-Date-Selector-Viz/releases) page.
+**[Download DateRangeSlicer.1.1.0.pbiviz](DateRangeSlicer.1.1.0.pbiviz)** ⬅️ Click to download
+
+Or get previous versions from the [Releases](https://github.com/EmmanuelTwumOsafo/PowerBI-Custom-Date-Selector-Viz/releases) page.
 
 ## 🚀 Installation
 
@@ -110,6 +131,35 @@ When reporting issues, please include:
 ## 📄 License
 
 Free to use and modify for your Power BI reports.
+
+## 📋 Changelog
+
+### Version 1.1.0 (2026-04-14)
+
+**New Features:**
+- Focus mode integration for professional onboarding experience
+- Date range validation (start ≤ end)
+- Custom themed dialog buttons (OK/Cancel)
+- Visual feedback for disabled dates
+
+**Improvements:**
+- Redesigned date picker footer layout
+- Reduced dialog size (180×240px)
+- Removed scrollbars from dialogs
+- Added comprehensive documentation (KNOWN_ISSUES.md)
+
+**Bug Fixes:**
+- Fixed focus mode re-entry loop
+- Fixed invalid date range selections
+- Fixed theme color not applying to buttons
+
+### Version 1.0.0 (2026-04-13)
+- Initial release
+- Dual calendar view
+- Preset date ranges
+- Custom date picker dialogs
+- Theme customization
+- Onboarding experience
 
 ---
 
