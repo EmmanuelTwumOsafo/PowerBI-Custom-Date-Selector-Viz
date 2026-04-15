@@ -1,7 +1,7 @@
 # Power BI Date Range Slicer
 
 [![Power BI](https://img.shields.io/badge/Power%20BI-Custom%20Visual-F2C811?logo=powerbi)](https://powerbi.microsoft.com/)
-[![Version](https://img.shields.io/badge/Version-1.1.0-green.svg)](https://github.com/EmmanuelTwumOsafo/PowerBI-Custom-Date-Selector-Viz)
+[![Version](https://img.shields.io/badge/Version-2.0.0-green.svg)](https://github.com/EmmanuelTwumOsafo/PowerBI-Custom-Date-Selector-Viz)
 [![Release](https://img.shields.io/github/v/release/EmmanuelTwumOsafo/PowerBI-Custom-Date-Selector-Viz)](https://github.com/EmmanuelTwumOsafo/PowerBI-Custom-Date-Selector-Viz/releases)
 [![Downloads](https://img.shields.io/github/downloads/EmmanuelTwumOsafo/PowerBI-Custom-Date-Selector-Viz/total)](https://github.com/EmmanuelTwumOsafo/PowerBI-Custom-Date-Selector-Viz/releases)
 
@@ -11,6 +11,10 @@ A professional date range slicer for Power BI with an intuitive interface, prese
 
 ## ✨ Features
 
+- **Multi-Granularity Selection** - Choose dates by Day, Month, Quarter, Half-year, or Year
+- **Tab-Based Interface** - Easy switching between different time granularities
+- **Range Selection** - Select ranges at any granularity (e.g., Q1 2024 - Q3 2024)
+- **Business Period Alignment** - Perfect for fiscal quarters and half-year reporting
 - **Focus Mode Onboarding** - Professional first-time setup experience
 - **Date Range Validation** - Prevents invalid date selections
 - **Themed Dialog Buttons** - OK/Cancel buttons match your theme color
@@ -22,27 +26,50 @@ A professional date range slicer for Power BI with an intuitive interface, prese
 - **Customizable Colors** - Match your report theme
 - **Professional UI** - Clean interface with month/year dropdowns
 
-## 🆕 What's New in v1.1.0
+## 🆕 What's New in v2.0.0
 
-### Major Enhancements
-- **Focus Mode Integration**: Automatically enters focus mode for first-time setup, exits smoothly after completion
-- **Date Validation**: Start date cannot be after end date (and vice versa) with visual feedback
-- **Custom Themed Buttons**: Dialog buttons now use your selected theme color
-- **Improved Layout**: Redesigned date picker footer (Today | Cancel OK)
+### 🎯 Major Feature: Multi-Granularity Date Selection
 
-### Bug Fixes
-- Fixed focus mode re-entry loop
-- Fixed invalid date range selections
-- Removed scrollbars from dialogs
-- Theme colors now apply to all dialog buttons
+Version 2.0.0 introduces a revolutionary tab-based interface for selecting dates at different granularity levels:
+
+#### **Day View** (Original)
+- Dual calendar with day-level precision
+- Week numbers and date range selection
+- Perfect for detailed daily analysis
+
+#### **Month View** 🆕
+- Select entire months with one click
+- 3-year grid display (12 months per year)
+- Range selection: Jan 2024 - Mar 2024
+
+#### **Quarter View** 🆕
+- Select fiscal quarters (Q1-Q4)
+- Multi-year display
+- Range selection: Q1 2024 - Q3 2024
+
+#### **Half-Year View** 🆕
+- Select half-year periods (H1-H2)
+- Perfect for semi-annual reporting
+- Range selection: H1 2024 - H2 2025
+
+#### **Year View** 🆕
+- Select full years with one click
+- 11-year grid display
+- Range selection: 2024 - 2026
+
+### Benefits
+- **Faster Selection**: Select entire quarters or years with one click
+- **Business Alignment**: Aligns with fiscal reporting periods
+- **Flexible Analysis**: Switch between different time granularities
+- **Intuitive Interface**: Clear visual representation of time periods
 
 [View Full Changelog](#changelog)
 
 ## 📥 Download
 
-**Latest Version: 1.1.0**
+**Latest Version: 2.0.0**
 
-**[Download DateRangeSlicer.1.1.0.pbiviz](DateRangeSlicer.1.1.0.pbiviz)** ⬅️ Click to download
+**[Download DateRangeSlicer.2.0.0.pbiviz](DateRangeSlicer.2.0.0.pbiviz)** ⬅️ Click to download
 
 Or get previous versions from the [Releases](https://github.com/EmmanuelTwumOsafo/PowerBI-Custom-Date-Selector-Viz/releases) page.
 
@@ -73,10 +100,16 @@ Drag a date field from your data to the "Date" field well
 - Use month/year dropdowns to navigate
 - Click any date to select
 
-**Advanced Selection:**
+**Advanced Selection with Granularity:**
 - Click the settings button (⚙️) for full date range options
-- Use preset buttons: Last 7 Days, This Month, etc.
-- Or select a custom range with dual calendar view
+- **Choose your granularity**: Day, Month, Quarter, Half-year, or Year tabs
+- Use preset buttons: Last 7 Days, This Month, This Quarter, etc.
+- Or select a custom range:
+  - **Day**: Dual calendar view for precise date selection
+  - **Month**: Click months across multiple years
+  - **Quarter**: Select Q1-Q4 for fiscal reporting
+  - **Half-year**: Choose H1 or H2 for semi-annual periods
+  - **Year**: Select full years with one click
 
 ## 🎨 Customization
 
@@ -133,6 +166,36 @@ When reporting issues, please include:
 Free to use and modify for your Power BI reports.
 
 ## 📋 Changelog
+
+### Version 2.0.0 (2026-04-15)
+
+**🎯 Major Feature: Multi-Granularity Date Selection**
+- Tab-based interface for Day/Month/Quarter/Half-year/Year selection
+- Month View: 12-month grid per year with 3-year display
+- Quarter View: Q1-Q4 selection across multiple years
+- Half-Year View: H1-H2 selection for semi-annual reporting
+- Year View: Multi-year grid with 11-year range
+- Range selection support at all granularity levels
+- Automatic date mapping (e.g., Q2 2024 → Apr 1 - Jun 30)
+
+**New Components:**
+- MonthPicker: 12-month grid component
+- QuarterPicker: 4-quarter grid component
+- HalfYearPicker: 2 half-year periods component
+- YearPicker: Multi-year grid component
+- Date granularity utility functions
+
+**Benefits:**
+- Faster selection for business periods
+- Fiscal reporting alignment (Q1-Q4, H1-H2)
+- Flexible time granularity switching
+- Intuitive visual interface
+
+**Technical:**
+- Complete refactoring of OptionsDialog
+- New dateGranularity.ts utility module
+- Theme color integration across all views
+- Maintained backward compatibility
 
 ### Version 1.1.0 (2026-04-14)
 
