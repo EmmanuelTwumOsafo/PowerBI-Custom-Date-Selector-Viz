@@ -1,7 +1,7 @@
 # Power BI Date Range Slicer
 
 [![Power BI](https://img.shields.io/badge/Power%20BI-Custom%20Visual-F2C811?logo=powerbi)](https://powerbi.microsoft.com/)
-[![Version](https://img.shields.io/badge/Version-2.0.0-green.svg)](https://github.com/EmmanuelTwumOsafo/PowerBI-Custom-Date-Selector-Viz)
+[![Version](https://img.shields.io/badge/Version-2.1.0-green.svg)](https://github.com/EmmanuelTwumOsafo/PowerBI-Custom-Date-Selector-Viz)
 [![Release](https://img.shields.io/github/v/release/EmmanuelTwumOsafo/PowerBI-Custom-Date-Selector-Viz)](https://github.com/EmmanuelTwumOsafo/PowerBI-Custom-Date-Selector-Viz/releases)
 [![Downloads](https://img.shields.io/github/downloads/EmmanuelTwumOsafo/PowerBI-Custom-Date-Selector-Viz/total)](https://github.com/EmmanuelTwumOsafo/PowerBI-Custom-Date-Selector-Viz/releases)
 
@@ -12,6 +12,8 @@ A professional date range slicer for Power BI with an intuitive interface, prese
 ## ✨ Features
 
 - **Multi-Granularity Selection** - Choose dates by Day, Month, Quarter, Half-year, or Year
+- **Full Keyboard Accessibility** - Complete keyboard navigation with Tab, Arrow keys, Enter/Space
+- **Screen Reader Support** - WCAG 2.1 AA compliant with ARIA labels and live regions
 - **Tab-Based Interface** - Easy switching between different time granularities
 - **Range Selection** - Select ranges at any granularity (e.g., Q1 2024 - Q3 2024)
 - **Business Period Alignment** - Perfect for fiscal quarters and half-year reporting
@@ -25,6 +27,44 @@ A professional date range slicer for Power BI with an intuitive interface, prese
 - **Preset Date Ranges** - Last 7/30/90 days, This Month, and more
 - **Customizable Colors** - Match your report theme
 - **Professional UI** - Clean interface with month/year dropdowns
+- **High Contrast Support** - Works with Windows High Contrast mode
+
+## 🆕 What's New in v2.1.0
+
+### ♿ Accessibility Features (WCAG 2.1 AA Compliant)
+
+Version 2.1.0 makes the Date Range Slicer fully accessible to all users:
+
+#### **Full Keyboard Navigation** 🎹
+- **Tab/Shift+Tab**: Navigate through all controls
+- **Enter/Space**: Activate buttons and select items
+- **Escape**: Close dialogs
+- **Arrow Keys**: Navigate calendar and picker grids
+- **Home/End**: Jump to first/last day of month
+- **PageUp/PageDown**: Navigate between months
+
+#### **Screen Reader Support** 🔊
+- Complete ARIA labels for all elements
+- Live regions announce date selections
+- Descriptive labels for all controls
+- Tested with NVDA screen reader
+
+#### **Focus Management** 🎯
+- Visible focus indicators using theme color
+- Focus trap in dialogs
+- Focus restoration after dialog close
+- Logical tab order
+
+#### **High Contrast Support** 🌓
+- Works with Windows High Contrast mode
+- Sufficient color contrast (4.5:1 ratio)
+- Focus indicators always visible
+
+### Benefits
+- **Accessible to All**: Keyboard users, screen reader users, low vision users
+- **Certification Ready**: Meets Microsoft certification requirements
+- **Legal Compliance**: WCAG 2.1 AA compliant (ADA, Section 508)
+- **Better UX**: Improved usability for everyone
 
 ## 🆕 What's New in v2.0.0
 
@@ -67,9 +107,9 @@ Version 2.0.0 introduces a revolutionary tab-based interface for selecting dates
 
 ## 📥 Download
 
-**Latest Version: 2.0.0**
+**Latest Version: 2.1.0** ♿ Fully Accessible
 
-**[Download DateRangeSlicer.2.0.0.pbiviz](DateRangeSlicer.2.0.0.pbiviz)** ⬅️ Click to download
+**[Download DateRangeSlicer.2.1.0.pbiviz](DateRangeSlicer.2.1.0.pbiviz)** ⬅️ Click to download
 
 Or get previous versions from the [Releases](https://github.com/EmmanuelTwumOsafo/PowerBI-Custom-Date-Selector-Viz/releases) page.
 
@@ -166,6 +206,52 @@ When reporting issues, please include:
 Free to use and modify for your Power BI reports.
 
 ## 📋 Changelog
+
+### Version 2.1.0 (2026-04-15)
+
+**♿ Accessibility Features (WCAG 2.1 AA Compliant)**
+
+**Full Keyboard Navigation:**
+- Tab/Shift+Tab navigation through all controls
+- Enter/Space to activate buttons and select items
+- Escape to close dialogs
+- Arrow keys for grid navigation (Calendar, Month, Quarter, Half-year, Year)
+- Home/End keys jump to first/last day of month
+- PageUp/PageDown keys navigate between months
+
+**ARIA Labels and Roles:**
+- Comprehensive ARIA attributes for screen readers
+- role="dialog", role="tablist", role="grid", role="gridcell"
+- aria-label, aria-selected, aria-expanded for all controls
+- Live regions announce date selections
+
+**Focus Management:**
+- Visible focus indicators using theme color
+- Focus trap in dialogs (Tab cycles within dialog)
+- Focus restoration after dialog close
+- Logical tab order throughout
+
+**Screen Reader Support:**
+- Tested with NVDA screen reader
+- All controls have accessible names
+- Clear instructions for navigation
+- Status announcements for all actions
+
+**High Contrast Support:**
+- Works with Windows High Contrast mode
+- Sufficient color contrast (4.5:1 ratio)
+- Focus indicators always visible
+
+**Benefits:**
+- Accessible to keyboard users, screen reader users, low vision users
+- Meets Microsoft certification requirements
+- WCAG 2.1 AA compliant (ADA, Section 508)
+- Better UX for all users
+
+**Documentation:**
+- Added ACCESSIBILITY_PHASE1_COMPLETE.md
+- Added ACCESSIBILITY_SUMMARY.md
+- Added ACCESSIBILITY_TESTING_GUIDE.md
 
 ### Version 2.0.0 (2026-04-15)
 
